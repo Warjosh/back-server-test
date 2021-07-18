@@ -38,6 +38,6 @@ var time = require('./routes/session');
 app.use('/service', time); 
 
 //Escuchar peticiones
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3002, () => {
     console.log('Express server puerto 3002: \x1b[32m%s\x1b[0m', 'online');
 });
